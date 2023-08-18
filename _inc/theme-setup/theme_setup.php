@@ -26,3 +26,7 @@ function lt_excerpt_limit($excerpt): string
 function lt_excerpt_img_author_single($excerpt){
     return  mb_substr($excerpt, 0, 300) . ' ' . '...';
 }
+function lt_excerpt_title_post_tech($excerpt): string
+{
+    return mb_substr($excerpt, 0, 40) . ' ' . '...';
+}

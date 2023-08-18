@@ -85,10 +85,10 @@ function dwt_register_tech_taxonomy()
         'show_admin_column' => true,
         'update_count_callback' => '_update_post_term_count',
         'query_var' => true,
-        'rewrite' => array('slug' => 'tech'),
+        'rewrite' => array('slug' => 'tech-cat'),
     );
 
-    register_taxonomy('tech', 'tech', $args);
+    register_taxonomy('tech-cat', 'tech', $args);
 
     unset($args);
     unset($labels);
@@ -121,10 +121,10 @@ function dwt_register_tech_taxonomy()
         'show_admin_column' => true,
         'update_count_callback' => '_update_post_term_count',
         'query_var' => true,
-        'rewrite' => array('slug' => 'tech'),
+        'rewrite' => array('slug' => 'tech-tag'),
     );
 
-    register_taxonomy('برگه ها', array('tech'), $args);
+    register_taxonomy('tech-tag', array('tech'), $args);
 }
 
 // hook into the init action and call create_book_taxonomies when it fires

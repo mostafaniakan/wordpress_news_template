@@ -16,3 +16,8 @@ include_once '_inc/shortcodes/shortcode.php';
 include_once '_inc/tinymce-costom-buttons-for-shortcode/tinymce-custom-buttons.php';
 include_once '_inc/dwt_theme_comments/comment_list.php';
 include_once '_inc/tech-custom-post-type-taxonomy/tech-custom-post-type-taxonomy.php';
+include_once '_inc/widgets/tech/sidebar-widget-tech.php';
+include_once '_inc/widgets/tech/CatsWidgetTech.php';
+include_once '_inc/widgets/tech/HotTagsTech.php';
+include_once '_inc/widgets/tech/HatPostTech.php';
+
