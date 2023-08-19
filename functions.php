@@ -21,3 +21,5 @@ include_once '_inc/widgets/tech/CatsWidgetTech.php';
 include_once '_inc/widgets/tech/HotTagsTech.php';
 include_once '_inc/widgets/tech/HatPostTech.php';
 
+include_once 'partials/loop/post-tech-filter/post-popular-loop.php';
+include_once 'partials/loop/post-tech-filter/post-hot-loop.php';

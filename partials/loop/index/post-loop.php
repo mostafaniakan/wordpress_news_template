@@ -38,14 +38,7 @@ $the_query = new WP_Query($args);
                     <?php endif;?>
 
                     <a class="pic-main" href="<?= get_the_permalink() ?>">
-                        <?php if (has_post_thumbnail()): ?>
-                            <?= get_the_post_thumbnail('', '', [
-
-                                'alt' => get_the_title()
-                            ]) ?>
-                        <?php else: ?>
-                  <?= lt_default_post_thumbnail() ?>
-                        <?php endif; ?>
+                        <?= dwt_post_thumbnail()?>
                     </a>
                 </div>
                 <div class="edu_data singles_items_border_bottom">

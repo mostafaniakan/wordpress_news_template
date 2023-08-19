@@ -30,3 +30,13 @@ function lt_excerpt_title_post_tech($excerpt): string
 {
     return mb_substr($excerpt, 0, 40) . ' ' . '...';
 }
+
+function dwt_post_thumbnail(){
+    if(has_post_thumbnail()) {
+        return get_the_post_thumbnail('', '', ['class' => 'img-responsive', 'alt' => get_the_title()]);
+
+    }else{
+return  dwt_default_post_thumbnail();
+    }
+
+}

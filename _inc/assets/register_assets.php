@@ -27,7 +27,10 @@ function wp_register_assets()
 
     wp_register_script('custom', get_stylesheet_directory_uri() . '/assets/js/custom.js', ['jquery'], '1.0.0',true);
 
-    wp_register_script('front-ajax', get_stylesheet_directory_uri() . '/assets/js/front-ajax', ['jquery'], '1.0.0',true);
+    wp_register_script('front-ajax', get_stylesheet_directory_uri() . '/assets/js/front-ajax.js', ['jquery'], '1.0.0',true);
+    //    ajax and nonce
+
+    wp_localize_script('front-ajax','ajax',['ajax_url'=>admin_url('admin-ajax.php'),'_nonce'=>wp_create_nonce(),]);
 
     wp_enqueue_script('main',get_stylesheet_directory_uri().'/assets/js/main.js',['jquery'],'1.0.0',true);
 
@@ -39,9 +42,7 @@ function wp_register_assets()
     wp_enqueue_script('custom');
     wp_enqueue_script('front-ajax');
 
-//    ajax and nonce
 
-    wp_localize_script('front_ajax','ajax',['ajax_url'=>admin_url('admin-ajax.php'),'_nonce'=>wp_create_nonce(),]);
 
 //
 
