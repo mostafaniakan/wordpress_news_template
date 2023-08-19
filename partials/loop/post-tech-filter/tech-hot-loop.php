@@ -23,7 +23,7 @@ function hot_post()
                 </div>
 
                 <div class="articles_grid_caption">
-                  <a href="<?= get_permalink()?>">  <h4><?= lt_excerpt_title_post_tech( get_the_title())?></h4></a>
+     <a href="'.get_the_permalink().'">  <h4>'.lt_excerpt_title_post_tech(get_the_title()).'</h4></a>
                     <div class="articles_grid_author">
                         <div class="articles_grid_author_img">' . get_avatar(get_the_author_meta('email'), 40) . '</div>
                         <h4>' . get_the_author() . '</h4>

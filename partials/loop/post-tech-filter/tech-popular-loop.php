@@ -1,5 +1,5 @@
 <?php
-function video(){
+function popular(){
     $args=[
         'post_type'=>['tech'],
         'showposts'=>3,
@@ -20,7 +20,7 @@ function video(){
                 </div>
 
                 <div class="articles_grid_caption">
-                  <a href="<?= get_permalink()?>">  <h4><?= lt_excerpt_title_post_tech( get_the_title())?></h4></a>
+                <a href="'.get_the_permalink().'">  <h4>'.lt_excerpt_title_post_tech(get_the_title()).'</h4></a>
                     <div class="articles_grid_author">
                         <div class="articles_grid_author_img">'.get_avatar(get_the_author_meta('email'),40).'</div>
                         <h4>'.get_the_author().'</h4>
@@ -40,5 +40,5 @@ function video(){
 
 }
 
-add_action('wp_ajax_nopriv_video','video');
-add_action('wp_ajax_video','video');
+add_action('wp_ajax_nopriv_popular','popular');
+add_action('wp_ajax_popular','popular');
