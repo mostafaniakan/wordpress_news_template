@@ -23,7 +23,7 @@
                             ]);
                         } else {
 
-                            echo lt_default_post_thumbnail();
+                            echo dwt_default_post_thumbnail();
                         }
 
                         ?>

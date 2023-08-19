@@ -2453,6 +2453,7 @@ a.btn-trans-video i {
     padding:.5rem .75rem;
     border:1px solid #e6eaf3;
     background-clip: initial;
+    height: 100%;
 }
 .submit-form .form-control, .submit-page .form-control, .frm_submit_block .form-control{
     background: #f9fafc;
@@ -3225,6 +3226,7 @@ nav a:hover {
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
     transition: color .3s
+    mar
 }
 
 .nav-search-icon:after,
@@ -10331,5 +10333,7 @@ a._cr_detail_arrow {
 }
 .comment_pagination a.next,.comment_pagination a.prev{
     background-color: transparent;
-
+}
+.search-icon{
+    margin-top: 3%;
 }

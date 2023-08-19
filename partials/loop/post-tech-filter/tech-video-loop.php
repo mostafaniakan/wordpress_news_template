@@ -1,5 +1,9 @@
 <?php
+
 function video(){
+    if(!wp_verify_nonce($_POST['nonce'])){
+        return false;
+    }
     $args=[
         'post_type'=>['tech'],
         'showposts'=>3,

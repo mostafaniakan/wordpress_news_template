@@ -16,18 +16,22 @@
                             <div class="col-lg-10 col-md-9 col-sm-12 br-right">
                                 <div class="form-group">
                                     <div class="input-with-icon">
-                                        <input type="text" class="form-control" placeholder="جستجو ..." />
-                                        <img src="<?= get_template_directory_uri().'/assets/img/search.svg' ?>" class="search-icon" alt="" />
+<!--                                        --><?php //get_search_form() ?>
+                                       <form action="<?php bloginfo('url')?>" method="get">
+
+                                           <input type="text" name="s" class="form-control" placeholder="جستجو ..." />
+                                           <img src="<?= get_template_directory_uri().'/assets/img/search.svg' ?>" class="search-icon" alt="" />
+
                                     </div>
                                 </div>
                             </div>
 
                             <div class="col-lg-2 col-md-3 col-sm-12 pl-0">
                                 <div class="form-group none">
-                                    <a href="#" class="btn search-btn full-width">جستجو</a>
+                                    <input type="submit" value="جستجو" class="btn search-btn full-width">
                                 </div>
                             </div>
-
+                            </form>
                         </div>
 
                     </div>

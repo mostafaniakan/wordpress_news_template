@@ -1,6 +1,10 @@
 <?php
+
 function hot_post()
 {
+    if(!wp_verify_nonce($_POST['nonce'])){
+        return false;
+    }
     $args = [
         'post_type' => ['tech'],
 //        'posts_per_page'=>3,
