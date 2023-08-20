@@ -43,6 +43,7 @@ function dwt_more_setting_html($post)
             'name' => 'post_categories',
             'selected' => get_post_meta($post->ID, '_dwt_post_category', true),
             'show_count' => 1,
+            'taxonomy'          => ['category','tech-cat'],
 //            'value_field' => 'slug'
 
         ]

@@ -10337,3 +10337,27 @@ a._cr_detail_arrow {
 .search-icon{
     margin-top: 3%;
 }
+.tag_search{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 10px 0 10px 0;
+}
+.tag_search a{
+    margin-right: 10px;
+    font-weight: bold;
+    color: #f8baba;
+    border-right: solid 1px #f88585;
+    padding: 10px;
+}
+.current span{
+    background-color: #a7a7ff!important;
+}
+.current span{
+    color: white!important;
+}
+.pagination{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
