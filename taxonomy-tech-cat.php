@@ -1,6 +1,4 @@
-<!--comment custom page -->
-<?php /* Template Name: آرشیو */ ?>
-
+<!--دسته بندی اختصاصی در این قسمت نمایش داده میشه -->
 <?php get_header()?>
 <?= get_template_part('partials/nav/nav','nav');?>
 <?= get_template_part('partials/archive/title','title');?>
