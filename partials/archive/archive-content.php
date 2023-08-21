@@ -44,7 +44,9 @@
                                 <div class="path-img"><a
                                             href="instructor-detail.html"><?= get_avatar(get_the_author_meta('email'), 35, '') ?></a>
                                 </div>
-                                <h5><a href="instructor-detail.html"><?= get_the_author() ?></a></h5>
+
+                                <!--                        get author name and link-->
+                                <h5><?php the_author_posts_link(); ?></h5>
                             </div>
                             <?php
 

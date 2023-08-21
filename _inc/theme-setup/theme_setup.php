@@ -31,12 +31,16 @@ function lt_excerpt_title_post_tech($excerpt): string
     return mb_substr($excerpt, 0, 40) . ' ' . '...';
 }
 
-function dwt_post_thumbnail(){
+function dwt_post_thumbnail($class=null){
+    $class_img="img-responsive";
+    if(isset($class)){
+        $class_img=$class;
+    }
     if(has_post_thumbnail()) {
-        return get_the_post_thumbnail('', '', ['class' => 'img-responsive', 'alt' => get_the_title()]);
+        return get_the_post_thumbnail('', '', ['class' => $class_img, 'alt' => get_the_title()]);
 
     }else{
-return  dwt_default_post_thumbnail();
+return  dwt_default_post_thumbnail($class_img);
     }
 
 }

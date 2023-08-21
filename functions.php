@@ -25,3 +25,5 @@ include_once 'partials/loop/post-tech-filter/tech-popular-loop.php';
 include_once 'partials/loop/post-tech-filter/tech-hot-loop.php';
 include_once 'partials/loop/post-tech-filter/tech-video-loop.php';
 include_once 'partials/loop/post-tech-filter/tech-new-loop.php';
+include_once '_inc/user-field/user-field.php';
+include_once '_inc/modify-queries/modify-queries.php';

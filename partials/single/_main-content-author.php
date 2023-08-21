@@ -7,7 +7,7 @@
            ]) ?>
 
         </span>
-        <h3 class="pa-name"><?= get_the_author_meta('first_name') ?></h3>
+        <h3 class="pa-name"><?php the_author_posts_link(); ?></h3>
         <ul class="social-links">
             <?php if(get_the_author_meta('facebook')): ?>
             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
