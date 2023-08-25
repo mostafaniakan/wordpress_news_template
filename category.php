@@ -1,4 +1,5 @@
 
+
 <?php get_header()?>
 <?= get_template_part('partials/nav/nav','nav');?>
 <?= get_template_part('partials/category/category-title','category-title');?>
