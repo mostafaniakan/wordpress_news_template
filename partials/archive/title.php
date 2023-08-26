@@ -9,7 +9,18 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#">خانه</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">همه مطالب</li>
+                            <li class="breadcrumb-item active" aria-current="page">
+                                <?php
+                                if(is_year()){
+                                    echo get_the_date('سال Y');
+                                }else if(is_month()){
+                                    echo get_the_date('F ماه Y ');
+                                }else if(is_day()){
+                                    echo get_the_date('F j Y آرشیو مطالب');
+                                }
+                                ?>
+                            </li>
+
                         </ol>
                     </nav>
                 </div>
