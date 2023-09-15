@@ -1,5 +1,3 @@
-# wordpress_news_template
-
 ## 🛠 Skills
 Wordpress, Jquery, HTML, CSS...
 
