@@ -1,3 +1,4 @@
+
 ## 🛠 Skills
 Wordpress, Jquery, HTML, CSS...
 
@@ -10,7 +11,7 @@ html template developed for wordpress
 
 
 
-![Logo](https://i.ibb.co/WktQrzr/946851114-1679570390.jpg)
+![Logo](https://i.ibb.co/h9WBNkj/089cf4788607f0015c4f24b113f3fc19e63261723ee4f.png)
 
 
 ## Deployment
